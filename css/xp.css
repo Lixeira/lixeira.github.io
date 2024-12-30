@@ -88,8 +88,9 @@
 /*  Lixeiras edits starts from here */
 
 body{
-    background-color: #1a2633;
+    background-image: url("https://raw.githubusercontent.com/Lixeira/toramdb/refs/heads/main/media/bg_sakura.webp");
     font-family: Arial, Helvetica, sans-serif;
+    accent-color: #ad6262;
 }
 
 .header-title{
@@ -97,10 +98,9 @@ body{
 }
 
 #mq-group, .section {
-    background-color: #8fb9dd;
-    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.4);
+    background-color: #ffc4da;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+    border: none;
 }
 
 p, legend, label, span, div {
@@ -112,13 +112,12 @@ legend{
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 2em;
     font-weight: 700;
-    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
 }
 
 .radio-group label{
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 
 select, input{
