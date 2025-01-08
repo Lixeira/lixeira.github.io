@@ -86,50 +86,55 @@
 }
 
 /*  Lixeiras edits starts from here */
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #a7a7a7;
-    accent-color: #4d88d2;
+:root{
+    --bg-color : #212831;
+    --secondary-color: #151b23;
+    --Tertiary-colors: #262c36;
+    --text-color: #d1d7e0;
+    --accent-color: #347d39;
+    --shadow-color: rgba(167, 157, 255, 0.4);
 }
 
-.header-title{
-    color: white;
+body{
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    accent-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.header, .footer{
+    background-color: var(--secondary-color);
 }
 
 #mq-group, .section {
-    background-color: #c7d7ee;
-    box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+    background-color: var(--secondary-color);
+    box-shadow: 0px 1px 4px 1px var(--shadow-color);
     border: none;
 }
 
-p, legend, label, span, div {
-    color: #000000;
-}
-
 legend{
-    background-color: white;
+    background-color: var(--Tertiary-colors);
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 2em;
     font-weight: 700;
-    box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 4px 1px var(--shadow-color);
 }
 
-.radio-group label{
-    color: black;
-    font-weight: bold;
-}
-
-select, input{
+select, input, .grid-3 input{
+    background-color: var(--Tertiary-colors);
+    color: var(--text-color);
     padding: 0.2em;
+    border: 1px solid var(--shadow-color);
     border-radius: 0.6em;
+}
+
+input:focus, select:focus, .grid-3 input:focus{
+    outline: 1px solid rgb(128, 168, 255);
+    box-shadow: 0px 1px 4px 2px var(--shadow-color);
 }
 
 select{
     padding-left: 1em;
-    background-color: white;
-    border: 1px solid black;
-    cursor: pointer;
 }
 
 input{
