@@ -1,0 +1,52 @@
+.header {
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3rem;
+  background-color: var(--bg-color);
+  padding: 0 1.5rem;
+  align-items: center;
+  border: none;
+}
+
+.header a {
+  /*this display flex centers the logo*/
+  width: 100%;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header img {
+  height: 1.125rem;
+}
+
+body {
+  padding-top: 5rem;
+}
+
+:root {
+  --bg-color: #0e1117;
+  --primary-color: hsl(234, 12%, 20%);
+  --secondary-color: hsl(228, 16%, 12%);
+  --text-color: hsl(0, 0%, 90%);
+  --accent-color: hsl(221, 100%, 75%);
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --glow-color: rgba(167, 157, 255, 0.4);
+}
+
+#mq-group,
+.section {
+  background-color: var(--primary-color);
+}
+
+legend,
+select,
+input,
+.grid-3 input {
+  background-color: var(--secondary-color);
+}
