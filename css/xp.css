@@ -104,6 +104,15 @@ body{
 
 .header, .footer{
     background-color: var(--secondary-color);
+    border: none;
+}
+
+.header{
+    border-bottom: 1px solid var(--shadow-color);
+}
+
+.footer{
+    border-top: 1px solid var(--shadow-color);
 }
 
 #mq-group, .section {
@@ -151,3 +160,34 @@ input{
 .floating-img{
     height: 10rem;
 }
+
+#mq-startFrom{
+    color: #ff4e4e;
+}
+
+#mq-stopAt{
+    color: #5ecc5e;
+}
+
+/*fade in and up animation*/
+
+.animate{
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+  }
+  
+  @keyframes fadeInUp{
+    0%{
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  100%{
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  }
+  
