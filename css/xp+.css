@@ -39,8 +39,8 @@ body {
   --secondary-color: #f2f2f2;
   --text-color: hsl(0, 0%, 10%);
   --accent-color: hsl(221, 100%, 75%);
-  --shadow-color: rgba(0, 0, 0, 0.4);
-  --glow-color: rgba(167, 157, 255, 0.4);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --glow-color: rgba(99, 128, 255, 0.5);
 }
 
 .header img {
