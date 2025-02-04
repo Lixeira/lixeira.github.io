@@ -1,3 +1,5 @@
+@import url(font.css);
+
 .header {
   z-index: 100;
   display: flex;
@@ -20,7 +22,7 @@
 }
 
 body {
-  padding-top: 5rem;
+  font-family: noto sans;
 }
 
 /* :root {
@@ -43,14 +45,37 @@ body {
   --glow-color: rgba(99, 128, 255, 0.5);
 }
 
+.header {
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--bg-color);
+  padding: .5rem 1.5rem;
+  align-items: center;
+}
+
+.header a {
+  /*this display flex centers the logo*/
+  display: flex;
+  justify-content: center;
+}
+
 .header img {
-  height: 1.15rem;
+  height: 1.4rem;
 }
 
 .discord{
   background-color: #5865F2;
   padding: 0.5rem;
   border-radius: 50rem;
+}
+
+.discord img{
+  height: 1.25rem;
 }
 
 #mq-group,
@@ -68,4 +93,9 @@ select,
 input,
 .grid-3 input {
   background-color: var(--secondary-color);
+  font-family: inherit;
+}
+
+.main{
+  padding-top: 5rem;
 }
